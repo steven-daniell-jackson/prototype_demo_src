@@ -1,22 +1,4 @@
-<header class="bg-dark py-2">
-  <div class="container">
-    <nav class="navbar">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link">Prototype Demo</a>
-        </li>
-      </ul>
-
-      <ul class="navbar-nav justify-content-end d-none d-lg-flex ml-md-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa fa-github"></i></a>
-        </li>
-      </ul>
-
-      <a class="btn btn-outline-primary ml-md-3" href="#">View Demo</a>
-    </nav>
-  </div>
-</header>
+<app-header></app-header>
 
 <section>
   <div class="container my-5">
@@ -24,24 +6,14 @@
       <div class="col col-md-12 text-center">
         <h1>Prototype Demo</h1>
         <p class="lead">
-          Example of the prototype concept
+          Example of the Prototype concept
         </p>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col col-md-12 text-center">
-        <a class="btn btn-primary" href="#">View Demo</a>
+        <a class="btn btn-primary" [routerLink]="['/demo']">View Demo</a>
       </div>
     </div>
   </div>
 </section>
-
-<footer class="bg-dark">
-  <div class="container">
-    <div class="row text-center align-items-center">
-      <div class="col">
-        <p class="h5 py-3">Written by Steven Jackson</p>
-      </div>
-    </div>
-  </div>
-</footer>
