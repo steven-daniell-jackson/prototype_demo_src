@@ -6,10 +6,11 @@ import { HomepageComponent } from "./pages/homepage/homepage.component";
 import { DemoHomepageComponent } from "./pages/demo/demo-homepage/demo-homepage.component";
 
 const appRoutes: Routes = [
-  { path: "", component: HomepageComponent, data: { state: "home" } },
+  { path: "", component: HomepageComponent, data: { animation: "HomePage" } },
   {
     path: "demo",
-    component: DemoHomepageComponent
+    component: DemoHomepageComponent,
+    data: { animation: "DemoPage" }
   }
 ];
 

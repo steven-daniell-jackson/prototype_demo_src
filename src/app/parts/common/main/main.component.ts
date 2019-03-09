@@ -21,8 +21,11 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {}
 
-  getState(outlet) {
-    console.log(outlet.activatedRouteData.state);
-    return outlet.activatedRouteData.state;
+  prepareRoute(outlet: RouterOutlet) {
+    return (
+      outlet &&
+      outlet.activatedRouteData &&
+      outlet.activatedRouteData["animation"]
+    );
   }
 }
