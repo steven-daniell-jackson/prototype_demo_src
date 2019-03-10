@@ -1,0 +1,24 @@
+<button
+  class="navbar-toggler"
+  (click)="toggleMenu()"
+  type="button"
+  data-toggle="collapse"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<aside class="sidenav" [@DemoMenuOpen]="isMenuOpen ? 'open' : 'close'">
+  <ul>
+    <nav class="nav">
+      <ul>
+        <li><a href="">Content</a></li>
+        <li><a href="">CTA</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Forms</a></li>
+        <li><a href="">Testimonials</a></li>
+      </ul>
+    </nav>
+  </ul>
+</aside>
