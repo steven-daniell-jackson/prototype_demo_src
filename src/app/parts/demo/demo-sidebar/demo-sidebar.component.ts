@@ -16,17 +16,21 @@ import {
       state(
         "close",
         style({
-          // opacity: 0,
+          opacity: 0,
           backgroundColor: "#fff",
-          left: "-100px"
+          left: "-100px",
+          width: "0vh",
+          display: "none"
         })
       ),
       state(
         "open",
         style({
-          // opacity: 1,
+          opacity: 1,
           backgroundColor: "#343a40",
-          left: "0px"
+          left: "0px",
+          width: "25vh",
+          display: "block"
         })
       ),
       transition("close <=> open", animate(200))

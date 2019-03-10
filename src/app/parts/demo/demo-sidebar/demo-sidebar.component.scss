@@ -29,10 +29,20 @@ nav {
       list-style-type: none;
       padding: 0;
       width: 100%;
-      li {
-        padding: 0.5rem 0;
-        a {
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+        li {
+          width: 100%;
+          padding: 0.5rem 0;
+          border-top: 1px solid $white;
+          margin: 0 auto;
+          text-align: center;
           color: $white;
+          &:hover {
+            background-color: lighten(#343a40, 10%);
+          }
         }
       }
     }
