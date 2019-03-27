@@ -5772,7 +5772,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\wamp64\www\prototype\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! E:\wamp64\www\prototype_html\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
