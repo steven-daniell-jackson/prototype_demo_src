@@ -1,21 +1,23 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { HomepageComponent } from "./templates/layouts/homepage/homepage.component";
 
-// Common Pages
-import { HomepageComponent } from "./pages/homepage/homepage.component";
-import { DemoHomepageComponent } from "./pages/demo/demo-homepage/demo-homepage.component";
-
-const appRoutes: Routes = [
-  { path: "", component: HomepageComponent, data: { animation: "HomePage" } },
+const routes: Routes = [
   {
-    path: "demo",
-    component: DemoHomepageComponent,
-    data: { animation: "DemoPage" }
+    path: "",
+    component: HomepageComponent,
+    pathMatch: "full",
+    data: { animation: "HomePage" }
+  },
+  {
+    path: "html",
+    loadChildren: "./modules/html/html.module#HtmlModule",
+    data: { animation: "ModulePage" }
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

@@ -3,21 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Prototype": {
+    "prototype": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
-      },
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Prototype",
+            "outputPath": "dist/prototype",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,13 +21,10 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "src/styles.scss",
-              "node_modules/font-awesome/css/font-awesome.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "stylePreprocessorOptions": {
-              "includePaths": ["./node_modules/bootstrap/scss"]
-            },
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
@@ -58,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Prototype:build"
+            "browserTarget": "prototype:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Prototype:build:production"
+              "browserTarget": "prototype:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Prototype:build"
+            "browserTarget": "prototype:build"
           }
         },
         "test": {
@@ -79,7 +72,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": ["src/styles.scss"],
+            "styles": ["src/styles.css"],
             "scripts": [],
             "assets": ["src/favicon.ico", "src/assets"]
           }
@@ -93,7 +86,7 @@
         }
       }
     },
-    "Prototype-e2e": {
+    "prototype-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -101,11 +94,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Prototype:serve"
+            "devServerTarget": "prototype:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Prototype:serve:production"
+              "devServerTarget": "prototype:serve:production"
             }
           }
         },
@@ -119,5 +112,10 @@
       }
     }
   },
-  "defaultProject": "Prototype"
+  "defaultProject": "prototype",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

@@ -1,0 +1,82 @@
+
+<div class="card">
+    <div class="card-body">
+        <div class="w3-col l10 m12" id="main">
+            <div id="mainLeaderboard" style="overflow:hidden;">
+              <!-- MainLeaderboard-->
+
+              <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+              <div id="snhb-main_leaderboard-0"></div>
+
+            </div>
+      <h1>The <span class="color_h1">Geolocation</span> Object</h1>
+
+      <hr>
+
+      <h2>Geolocation Object</h2>
+      <p>The Geolocation object allows the user to provide their location to web
+      applications. For privacy reasons, the user is asked for permission to report
+      location information.</p>
+      <div class="w3-panel w3-note">
+      <p><b>Note:</b> This feature is available only in secure contexts (HTTPS).</p>
+        <p><strong>Note:</strong><b> </b>Geolocation is most accurate for devices with GPS, like iPhone.</p>
+      </div>
+      <p>The Geolocation API is published through the
+      <a target="_blank" href="https://www.w3schools.com/jsref/prop_nav_geolocation.asp">navigator.geolocation</a> object.</p>
+
+      <hr>
+
+      <h2>Geolocation Object Properties</h2>
+      <table class="table">
+        <tbody><tr>
+          <th style="width:25%">Property</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="https://www.w3schools.com/jsref/prop_geo_coordinates.asp">coordinates</a></td>
+          <td>Returns the position and altitude of the device on Earth</td>
+        </tr>
+        <tr>
+          <td><a target="_blank" href="https://www.w3schools.com/jsref/prop_geo_position.asp">position</a></td>
+          <td>Returns the position of the concerned device at a given time</td>
+        </tr>
+        <tr>
+          <td>positionError</td>
+          <td>Returns the reason of an error occurring when using the geolocating
+          device</td>
+        </tr>
+        <tr>
+          <td>positionOptions</td>
+          <td>Describes an object containing option properties to pass as a parameter
+          of Geolocation.getCurrentPosition() and Geolocation.watchPosition()</td>
+        </tr>
+        </tbody></table>
+
+      <h2>Geolocation Object Methods</h2>
+      <table class="table">
+        <tbody><tr>
+          <th style="width:25%">Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>clearWatch()</td>
+          <td>Unregister location/error monitoring handlers previously installed using
+          Geolocation.watchPosition()</td>
+        </tr>
+        <tr>
+          <td>getCurrentPosition()</td>
+          <td>Returns the current position of the device</td>
+          </tr>
+        <tr>
+          <td>watchPosition()</td>
+          <td>Returns a watch ID value that then can be used to unregister the handler
+          by passing it to the Geolocation.clearWatch() method</td>
+          </tr>
+        </tbody></table>
+
+      <br>
+
+      </div>
+    </div>
+  </div>
+
