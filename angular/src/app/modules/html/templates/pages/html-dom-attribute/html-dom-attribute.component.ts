@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-html-dom-attribute',
   templateUrl: './html-dom-attribute.component.html',
-  styleUrls: ['./html-dom-attribute.component.scss']
+  styleUrls: ["../html-main-page/html-main-page.component.scss"],
 })
 export class HtmlDomAttributeComponent implements OnInit {
 
