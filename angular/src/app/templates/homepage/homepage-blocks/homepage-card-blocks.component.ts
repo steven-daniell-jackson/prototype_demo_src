@@ -10,7 +10,7 @@ import { Component, OnInit, Input } from "@angular/core";
             <img
               alt="image"
               class="img-fluid rounded-0"
-              src="/src/app/assets/homepage-icons/{{ blockImage }}.png"
+              src="./src/app/assets/homepage-icons/{{ blockImage }}.png"
             />
           </div>
           <div class="col-12 ml-auto col-md-6 col-lg-8">
