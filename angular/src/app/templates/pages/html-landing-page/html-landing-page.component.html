@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<main class="container">
+  <div
+    *ngIf="!isShowingRouteLoadIndicator"
+    class="text-center justify-content-center "
+  >
+    <div class="row align-items-center">
+      <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-auto m-md-0">
+        <img
+          alt="image"
+          class="img-fluid"
+          src="./src/app/assets/homepage-icons/html5.png"
+        />
+      </div>
+      <div class="col-12 col-md-8 ml-auto pt-5 pt-md-0 text-left">
+        <h2>HTML 5</h2>
+        <p class="lead">
+          <b>Contains:</b> <br />Reference: attributes, audio, video, canvas,
+          colors, events, tags <br /><br />
+          Dom: attributes, console, document, element, event objects, events,
+          geolocation, history, location, navigator, storage, style, window
+        </p>
+        <p class="mt-4">
+          <a class="btn btn-secondary" routerLink="/html">Open HTML 5 Module</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- I indicate that a router module is being loaded asynchronously. -->
+  <div *ngIf="isShowingRouteLoadIndicator" class="router-load-indicator">
+    <div class="row loader-wrapper text-center">
+      <div class="col-md-12 m-5">
+        <div class="loader"></div>
+        <p class="mt-5">Loading Module</p>
+      </div>
+    </div>
+  </div>
+</main>

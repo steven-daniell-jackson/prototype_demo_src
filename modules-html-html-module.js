@@ -220,17 +220,6 @@ module.exports = "<div class=\"card\">\n  <div class=\"card-body\">\n    <div cl
 
 /***/ }),
 
-/***/ "./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.scss":
-/*!***************************************************************************************************!*\
-  !*** ./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.scss ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ "./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.ts":
 /*!*************************************************************************************************!*\
   !*** ./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.ts ***!
@@ -261,7 +250,7 @@ var HtmlDomAttributeComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-html-dom-attribute',
             template: __webpack_require__(/*! ./html-dom-attribute.component.html */ "./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.html"),
-            styles: [__webpack_require__(/*! ./html-dom-attribute.component.scss */ "./src/app/modules/html/templates/pages/html-dom-attribute/html-dom-attribute.component.scss")]
+            styles: [__webpack_require__(/*! ../html-main-page/html-main-page.component.scss */ "./src/app/modules/html/templates/pages/html-main-page/html-main-page.component.scss")],
         }),
         __metadata("design:paramtypes", [])
     ], HtmlDomAttributeComponent);

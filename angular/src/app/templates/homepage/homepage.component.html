@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+<main>
+  <app-homepage-card-blocks
+    *ngFor="let block of homepageBlocks"
+    blockName="{{ block.blockName }}"
+    blockContains=" {{ block.blockContains }}"
+    blockImage="{{ block.blockImage }}"
+    blockRouterLink="{{ block.blockRouterLink }}"
+  ></app-homepage-card-blocks>
+</main>
+<app-footer></app-footer>

@@ -1,4 +1,4 @@
-$background-dark-grey: #282828;
+$background-dark-grey: #28282808;
 .loader-wrapper {
   font-size: 1.6rem;
 }
@@ -19,4 +19,17 @@ $background-dark-grey: #282828;
   100% {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  padding: 0;
+}
+
+.container-wrapper a {
+  padding: 0.5rem 3rem;
+}
+
+.row {
+  padding: 2rem 0;
+  border-bottom: 1px solid #c3c3c3;
 }

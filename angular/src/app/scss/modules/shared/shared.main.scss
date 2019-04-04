@@ -1,0 +1,10 @@
+$black: #000;
+
+main {
+  background-color: lighten($color: $black, $amount: 80%);
+  min-height: 100%;
+  padding: 1rem;
+}
+.card {
+  margin: 20px 0;
+}
