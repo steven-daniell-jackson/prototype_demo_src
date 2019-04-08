@@ -1,0 +1,36 @@
+<main class="container">
+  <div
+    *ngIf="!isShowingRouteLoadIndicator"
+    class="text-center justify-content-center "
+  >
+    <div class="row align-items-center">
+      <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-auto m-md-0">
+        <img
+          alt="image"
+          class="img-fluid"
+          src="./assets/homepage-icons/jquery.png"
+        />
+      </div>
+      <div class="col-12 col-md-8 ml-auto pt-5 pt-md-0 text-left">
+        <h2>jQuery Reference Module</h2>
+        <p class="lead">
+          <b>Contains:</b> <br />Selectors, Events, Effects, Html/Css,
+          Traversing, Ajax, Misc, Properties
+        </p>
+        <p class="mt-4">
+          <a class="btn btn-primary" routerLink="/error">Load jQuery Module</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- I indicate that a router module is being loaded asynchronously. -->
+  <div *ngIf="isShowingRouteLoadIndicator" class="router-load-indicator">
+    <div class="row loader-wrapper text-center">
+      <div class="col-md-12 m-5">
+        <div class="loader"></div>
+        <p class="mt-5">Loading Module</p>
+      </div>
+    </div>
+  </div>
+</main>

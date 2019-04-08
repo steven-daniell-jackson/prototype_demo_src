@@ -4,36 +4,12 @@ import { Router } from "@angular/router";
 import { RouteConfigLoadEnd } from "@angular/router";
 import { RouteConfigLoadStart } from "@angular/router";
 @Component({
-  selector: "app-homepage",
-  templateUrl: "./homepage.component.html",
-  styleUrls: ["./homepage.component.scss"]
+  selector: "app-css-components-landing-page",
+  templateUrl: "./css-components-landing-page.component.html",
+  styleUrls: ["./css-components-landing-page.component.scss"]
 })
-export class HomepageComponent implements OnInit {
-  public isShowingRouteLoadIndicator: boolean;
-
-  homepageBlocks = [
-    {
-      blockName: "Languages",
-      blockContains: "HTML 5, CSS 3, Javascript, PHP, mySQL",
-      blockImage: "languages-image",
-      blockRouterLink: "/languages-landing-page"
-    },
-    {
-      blockName: "Frameworks",
-      blockContains: "Bootstrap",
-      blockImage: "bootstrap",
-      blockRouterLink: "/frameworks-landing-page"
-    },
-    {
-      blockName: "Libraries",
-      blockContains: "jQuery",
-      blockImage: "jquery",
-      blockRouterLink: "/libraries-landing-page"
-    }
-  ];
-
-  ngOnInit() {}
-
+export class CssComponentsLandingPageComponent implements OnInit {
+  isShowingRouteLoadIndicator: boolean;
   // I initialize the app view component.
   constructor(router: Router) {
     this.isShowingRouteLoadIndicator = false;
@@ -63,4 +39,6 @@ export class HomepageComponent implements OnInit {
       }
     );
   }
+
+  ngOnInit() {}
 }
