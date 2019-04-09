@@ -29,6 +29,7 @@ import { ReactLandingPageComponent } from "./templates/pages/frameworks/react-la
 import { AngularLandingPageComponent } from "./templates/pages/frameworks/angular-landing-page/angular-landing-page.component";
 import { NodejsLandingPageComponent } from "./templates/pages/other-landing-page/nodejs-landing-page/nodejs-landing-page.component";
 import { AngularjsLandingPageComponent } from "./templates/pages/frameworks/angularjs-landing-page/angularjs-landing-page.component";
+import { ChangelogComponent } from './templates/changelog/changelog.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AngularjsLandingPageComponent } from "./templates/pages/frameworks/angu
     AngularLandingPageComponent,
     NodejsLandingPageComponent,
     AngularjsLandingPageComponent,
-    CssComponentsLandingPageComponent
+    CssComponentsLandingPageComponent,
+    ChangelogComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   exports: [RouterModule],

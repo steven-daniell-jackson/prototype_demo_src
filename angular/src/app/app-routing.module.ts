@@ -15,6 +15,7 @@ import { JavascriptLandingPageComponent } from "./templates/pages/languages/java
 import { PhpLandingPageComponent } from "./templates/pages/languages/php-landing-page/php-landing-page.component";
 import { SqlLandingPageComponent } from "./templates/pages/languages/sql-landing-page/sql-landing-page.component";
 import { JqueryLandingPageComponent } from "./templates/pages/libraries/jquery-landing-page/jquery-landing-page.component";
+import { ChangelogComponent } from "./templates/changelog/changelog.component";
 
 const routes: Routes = [
   {
@@ -58,6 +59,11 @@ const routes: Routes = [
   {
     path: "error",
     component: ErrorPageComponent,
+    data: { animation: "HomePage" }
+  },
+  {
+    path: "changelog",
+    component: ChangelogComponent,
     data: { animation: "HomePage" }
   },
 
