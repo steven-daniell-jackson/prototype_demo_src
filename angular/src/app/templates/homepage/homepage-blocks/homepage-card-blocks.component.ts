@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: "app-homepage-card-blocks",
+  selector: 'app-homepage-card-blocks',
   template: `
     <div class="container-wrapper">
       <div class="container">
@@ -13,7 +13,7 @@ import { Component, OnInit, Input } from "@angular/core";
               src="./assets/homepage-icons/{{ blockImage }}.png"
             />
           </div>
-          <div class="col-12 ml-auto col-md-6 col-lg-8">
+          <div class="col-12 ml-auto col-md-6 col-lg-6">
             <h1>{{ blockName }}</h1>
             <p class="lead">
               Everything {{ blockName }}. <br />
@@ -32,7 +32,7 @@ import { Component, OnInit, Input } from "@angular/core";
       </div>
     </div>
   `,
-  styleUrls: ["./homepage-card-blocks.component.scss"]
+  styleUrls: ['./homepage-card-blocks.component.scss']
 })
 export class HomepageBlocksComponent implements OnInit {
   @Input() blockName: string;

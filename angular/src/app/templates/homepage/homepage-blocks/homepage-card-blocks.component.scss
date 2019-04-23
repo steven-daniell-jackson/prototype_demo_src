@@ -1,4 +1,4 @@
-// @import "~src/app/scss/modules/shared/shared.component.card";
+@import '~src/app/scss/modules/shared/shared.component.card';
 
 .container {
   padding: 2rem 0 0 0;
@@ -6,10 +6,4 @@
 
 .container-wrapper a {
   padding: 0.5rem 3rem;
-}
-
-@media screen and (max-width: 600px) {
-  .col-12 {
-    text-align: center !important;
-  }
 }
