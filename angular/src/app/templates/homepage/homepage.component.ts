@@ -14,7 +14,7 @@ export class HomepageComponent implements OnInit {
   homepageBlocks = [
     {
       blockName: 'Languages',
-      blockContains: 'HTML 5, CSS 3, Javascript, PHP, mySQL',
+      blockContains: 'HTML 5, CSS 3, Javascript, PHP, MySQL',
       blockImage: 'languages-image',
       blockRouterLink: '/languages-landing-page'
     },
@@ -31,7 +31,6 @@ export class HomepageComponent implements OnInit {
       blockRouterLink: '/libraries-landing-page'
     }
   ];
-
   ngOnInit() {}
 
   // I initialize the app view component.

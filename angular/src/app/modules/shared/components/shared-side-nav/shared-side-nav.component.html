@@ -1,14 +1,31 @@
-<ul class="nav flex-column">
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/">
-      Home
-    </a>
-  </li>
-  <li class="nav-item" *ngFor="let item of menuItems">
-    <app-shared-side-nav-item
-      linkText="{{ item.linkText }}"
-      routerLink="{{ item.routerLink }}"
-      icon="{{ item.icon }}"
-    ></app-shared-side-nav-item>
-  </li>
-</ul>
+<mat-sidenav-container
+  class="sidebar-container"
+  (backdropClick)="close('backdrop')"
+>
+  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
+    <!-- <p>
+      <button mat-flat-button (click)="close()" color="primary">
+        Close Menu
+      </button>
+    </p> -->
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/">
+          Home<span class="sr-only"></span>
+        </a>
+      </li>
+
+      <li class="nav-item" *ngFor="let item of menuItems">
+        <app-shared-side-nav-item
+          linkText="{{ item.linkText }}"
+          routerLink="{{ item.routerLink }}"
+          icon="{{ item.icon }}"
+        ></app-shared-side-nav-item>
+      </li>
+    </ul>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="sidebar-content">
+    <p><button mat-flat-button (click)="sidenav.open()">Menu</button></p>
+  </mat-sidenav-content>
+</mat-sidenav-container>

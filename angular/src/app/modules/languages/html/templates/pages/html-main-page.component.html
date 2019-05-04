@@ -1,27 +1,8 @@
 <div class="container-fluid">
-  <div class="row">
-    <nav class="col-md-2 d-none d-md-block sidebar">
-      <div class="sidebar-sticky">
-        <app-shared-side-nav [menuItems]="menuItems"></app-shared-side-nav>
-      </div>
-    </nav>
-
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <!-- <div
-        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 text-center"
-      >
-        <h2>Prototype - HTML</h2>
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group mr-2">
-            <button class="btn btn-sm btn-outline-secondary">Share</button>
-            <button class="btn btn-sm btn-outline-secondary">Export</button>
-          </div>
-        </div>
-      </div> -->
-
-      <div [@ModuleAnimation]="prepareRoute(outlet)">
-        <router-outlet #outlet="outlet"> </router-outlet>
-      </div>
-    </main>
-  </div>
+  <main role="main" class="">
+    <app-shared-side-nav [menuItems]="menuItems"></app-shared-side-nav>
+    <div [@ModuleAnimation]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"> </router-outlet>
+    </div>
+  </main>
 </div>

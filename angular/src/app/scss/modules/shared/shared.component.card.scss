@@ -1,4 +1,14 @@
 .card {
   margin: 2.5rem 0rem;
   padding: 1rem;
+  min-height: 350px;
+  box-shadow: 6px 6px 12px -8px;
+  transition: linear all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  .card-text {
+    min-height: 60px;
+  }
 }

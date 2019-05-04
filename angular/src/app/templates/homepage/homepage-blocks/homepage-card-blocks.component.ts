@@ -3,32 +3,20 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-homepage-card-blocks',
   template: `
-    <div class="container-wrapper">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-10 col-sm-6 m-auto col-md-4 pb-4 pb-md-0">
-            <img
-              alt="image"
-              class="img-fluid rounded-0"
-              src="./assets/homepage-icons/{{ blockImage }}.png"
-            />
-          </div>
-          <div class="col-12 ml-auto col-md-6 col-lg-6">
-            <h1>{{ blockName }}</h1>
-            <p class="lead">
-              Everything {{ blockName }}. <br />
-              Contains: {{ blockContains }}
-            </p>
-            <p>
-              <a
-                class="btn btn-primary mt-4 mb-5 mb-md-0 btn-lg"
-                [routerLink]="blockRouterLink"
-                >{{ blockName }}</a
-              >
-            </p>
-          </div>
+    <div class="card">
+      <div class="card-content">
+        <img
+          alt="Card image cap"
+          class="card-img-top img-fluid"
+          src="./assets/homepage-icons/{{ blockImage }}.png"
+        />
+        <div class="card-body text-center">
+          <h4 class="card-title">{{ blockName }}</h4>
+          <p class="card-text">Contains: {{ blockContains }}</p>
+          <a class="btn btn-primary btn-lg" [routerLink]="blockRouterLink">{{
+            blockName
+          }}</a>
         </div>
-        <hr />
       </div>
     </div>
   `,
