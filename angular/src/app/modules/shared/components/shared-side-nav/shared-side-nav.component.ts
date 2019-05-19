@@ -14,7 +14,5 @@ export class SharedSideNavComponent implements OnInit {
     this.sidenav.close();
   }
 
-  constructor() {}
-
   ngOnInit() {}
 }
